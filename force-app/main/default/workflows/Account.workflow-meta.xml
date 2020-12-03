@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Welcome</fullName>
+        <description>Welcome</description>
+        <protected>false</protected>
+        <recipients>
+            <type>accountOwner</type>
+        </recipients>
+        <recipients>
+            <recipient>daraguiney@resourceful-badger-erf953.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/SalesNewCustomerEmail</template>
+    </alerts>
+    <rules>
+        <fullName>Reach Out %26 Welcome</fullName>
+        <actions>
+            <name>Reach_Out_Memo</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <criteriaItems>
+            <field>Account.Name</field>
+            <operation>greaterThan</operation>
+        </criteriaItems>
+        <description>create a task to reach out and welcome new account.</description>
+        <triggerType>onCreateOnly</triggerType>
+    </rules>
+    <tasks>
+        <fullName>Reach_Out_Memo</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Reach out and welcome new account.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Reach Out Memo</subject>
+    </tasks>
+    <tasks>
+        <fullName>Welcome_Account</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Welcome new account</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Welcome Account</subject>
+    </tasks>
+    <tasks>
+        <fullName>Welcome_memo</fullName>
+        <assignedToType>owner</assignedToType>
+        <description>Reach Out and welcome new Account.</description>
+        <dueDateOffset>0</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <offsetFromField>Account.CreatedDate</offsetFromField>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Welcome memo</subject>
+    </tasks>
+</Workflow>

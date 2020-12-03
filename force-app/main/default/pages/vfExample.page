@@ -1,0 +1,19 @@
+<apex:page standardController="Account" recordSetVar="Accounts">
+<p>Hello World</p>
+<apex:form >
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockTable value="{!Accounts}" var="acct">
+                <apex:column >
+            <apex:inputText value="{!acct.Name}" />
+            <apex:inputText value="{!acct.BillingStreet}" />
+            <apex:inputText value="{!acct.BillingState}" />
+            <apex:inputText value="{!acct.BillingPostalCode}" />
+            <apex:inputText value="{!acct.BillingCity}" />
+        </apex:column>
+            </apex:pageBlockTable> 
+</apex:pageBlockSection>
+    <apex:commandButton action="{!save}" value="save" />
+    </apex:pageBlock>
+</apex:form>
+</apex:page>
