@@ -76,6 +76,32 @@
         <members>*</members>
         <name>CustomTab</name>
     </types>
+    <types>
+    <members>Admin</members>
+    <name>Profile</name>
+</types>
+<types>
+    <members>Driver</members>
+    <name>Profile</name>
+</types>
+<types>
+    <members>Mail handler</members>
+    <name>Profile</name>
+</types>
+<types>
+    <members>PostalCustomerCommunityUser</members>
+    <name>Profile</name>
+</types>
+<types>
+    <members>Web_Support</members>
+    <name>Queue</name>
+</types>
+<types>
+    <members>Address__c-Address Layout</members>
+    <name>Layout</name>
+</types>
+
+    
 
     
 
