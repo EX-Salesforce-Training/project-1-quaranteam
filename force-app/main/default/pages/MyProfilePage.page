@@ -1,5 +1,6 @@
 <apex:page id="portalUserProfilePage" controller="MyProfilePageController" showHeader="false" title="{!$Label.site.my_profile_page}">
-  <apex:composition template="{!$Site.Template}">
+  <apex:include pageName="Header"/>
+    <apex:composition template="{!$Site.Template}">
     <apex:define name="body">
         <apex:form id="theForm">
           <apex:outputPanel style="padding:50px 50px 50px 50px" id="userDetail">
@@ -69,4 +70,5 @@
          </apex:form>
     </apex:define>
   </apex:composition>
+    <apex:include pageName="Footer"/>
 </apex:page>

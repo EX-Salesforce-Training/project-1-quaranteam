@@ -1,0 +1,71 @@
+<apex:page showHeader="false" sidebar="false" controller="CommunitiesLoginController" standardStylesheets="true">
+
+<apex:Pagemessages id="msg"/>
+
+<!-- To allow Salesforce to display error messages -->
+
+<div class="head"><font size="40"><center>QUARANTEAM POSTAL</center></font></div>
+
+<apex:form >
+
+<p><b>QuaranTeam Postal Login</b><br /></p>
+
+<apex:panelGrid columns="2" >
+
+<div class="body"><center><p><b><font color="Black">UserName</font></b><br />
+
+<apex:inputText required="true" id="username" value="{!username}"/></p>
+
+<p><b><font color="Black">Password</font></b><br />
+
+    <apex:inputSecret id="password" value="{!password}"/></p></center></div>
+
+</apex:panelGrid>
+
+<p><apex:commandButton action="{!loginUser}" value="Login" id="Login"/>
+
+</p>
+
+</apex:form>
+
+<style>
+
+html,body{
+
+background-image:url(http://rebc.biz/dist/img/header_banner.jpg);
+
+background-repeat: no-repeat;
+
+background-size: 100% 100% ;
+
+height:100%;
+
+color:Black;
+
+float:top;
+
+}
+
+form{
+        to center -->
+    
+        .Center { 
+            width:200px; 
+            height:200px; 
+            position: fixed; 
+            background-color: blue; 
+            top: 50%; 
+            left: 50%; 
+            margin-top: -100px; 
+            margin-left: -100px; 
+         
+     
+
+
+
+
+}
+
+</style>
+
+</apex:page>

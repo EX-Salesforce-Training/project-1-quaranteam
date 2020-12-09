@@ -1,11 +1,11 @@
 trigger ContactAccountTrigger on Account ( after update) {
 	
     if(trigger.isBefore) {
-       ContactAccountHandler.AccountRelated();
+       AccountContactHandler.ContactRelated();
         
     }
 else
 if(trigger.isAfter) {
-        ContactAccountHandler.AccountRelated ();
+        AccountContactHandler.ContactRelated ();
     }
 }

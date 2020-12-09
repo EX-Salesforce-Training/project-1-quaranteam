@@ -1,0 +1,43 @@
+<apex:page controller="TrackingController" showHeader="false" sidebar="false">
+    
+   
+    <apex:Pagemessages id="msg"/>
+    <apex:include pageName="Header"/>
+    <apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
+     	<apex:tab label="Profile" name="name1" id="tabOne">content for tab one</apex:tab>
+        <apex:outputLink value="/apex/MyProfilePage">Profile</apex:outputLink>
+    <apex:outputLink value="/apex/Tracking">Track My Package</apex:outputLink>
+    
+       
+        
+       <apex:form >
+          <apex:pageBlock title="Enter Tracking Number">
+    
+             <apex:pageBlockSection columns="1">
+                 <apex:inputText label="TrackingNumber" alt="no" value="{!trackingID}"/>
+ 
+                 <apex:commandButton action="{!ConfirmButtonPressed}" value="Confirm"/>
+    
+            </apex:pageBlockSection>
+              
+              <apex:pageBlock id="display" title="Mail">
+                  <apex:pageBlockTable value="{!mailList}" var="mailItem"> 
+                      <apex:column value="{!mailItem.Tracking_Number__c}"/>
+                      <apex:column value="{!mailItem.Name}"/>
+                      <apex:column value="{!mailItem.Address__c}"/>
+                      <apex:column value="{!mailItem.Delivered__c}"/>
+                      <apex:column value="{!mailItem.Insurance__c}"/>
+                  </apex:pageBlockTable>
+              </apex:pageBlock>
+              
+          </apex:pageBlock>  
+        </apex:form>
+        <div align="center" width="100%">
+    	<apex:image id="theImage" value="https://uspstrackingfun.com/wp-content/uploads/2019/08/Track-Package-by-Tracking-Number-1024x582.jpg" />
+		<apex:include pageName="UserStatus"/>
+    
+		</div>
+    <apex:include pageName="Footer"/>
+    </apex:tabPanel>
+
+</apex:page>
