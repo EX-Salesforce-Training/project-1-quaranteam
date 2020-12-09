@@ -1,0 +1,28 @@
+<apex:page controller="CommunitiesLandingController"  showHeader="false" sidebar="false">
+
+<apex:include pageName="Header"/>
+
+<apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
+
+<apex:tab label="Need Support" name="NeedSupport" id="NeedSupport">
+
+<div align="right" width="25%">
+
+	<apex:include pageName="NewCaseList"/>
+    <apex:include pageName="AccountEdit"/>
+    <apex:include pageName="Tracking"/>
+    
+    <apex:include pageName="UserStatus"/>
+    
+
+
+
+</div>
+
+</apex:tab>
+
+</apex:tabPanel>
+
+<apex:include pageName="Footer"/>
+
+</apex:page>

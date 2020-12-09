@@ -1,0 +1,28 @@
+<apex:page controller="TrackingController">
+    <apex:Pagemessages id="msg"/>
+    
+       
+        <apex:form >
+          <apex:pageBlock title="Enter Tracking Number">
+    
+             <apex:pageBlockSection columns="1">
+                 <apex:inputText label="TrackingNumber" alt="no" value="{!trackingID}"/>
+ 
+                 <apex:commandButton action="{!ConfirmButtonPressed}" value="Confirm"/>
+    
+            </apex:pageBlockSection>
+              
+              <apex:pageBlock id="display" title="Mail">
+                  <apex:pageBlockTable value="{!mailList}" var="mailItem"> 
+                      <apex:column value="{!mailItem.Tracking_Number__c}"/>
+                      <apex:column value="{!mailItem.Name}"/>
+                      <apex:column value="{!mailItem.Address__c}"/>
+                      <apex:column value="{!mailItem.Delivered__c}"/>
+                      <apex:column value="{!mailItem.Insurance__c}"/>
+                  </apex:pageBlockTable>
+              </apex:pageBlock>
+              
+          </apex:pageBlock>  
+        </apex:form>
+    
+</apex:page>
