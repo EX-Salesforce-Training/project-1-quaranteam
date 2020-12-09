@@ -1,7 +1,7 @@
 <apex:page id="Header" showHeader="false" sidebar="false"  controller="header">
-  <div class="head"><font size="40"><center>POSTAL CENTER</center></font></div>
+  <div class="head"><font size="40"><center>QUARANTEAM POSTAL CENTER</center></font></div>
 
-<div align="right" class="icon">
+<div align="left" class="icon">
 
 <apex:image value="http://rebc.biz/dist/img/header_banner.jpg" width="3%"
 

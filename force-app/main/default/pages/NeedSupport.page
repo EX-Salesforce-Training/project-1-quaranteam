@@ -8,7 +8,7 @@
 
 <div align="right" width="25%">
 
-<apex:include pageName="NewCaseList"/>
+	<apex:include pageName="NewCaseList"/>
     <apex:include pageName="AccountEdit"/>
     <apex:include pageName="Tracking"/>
     

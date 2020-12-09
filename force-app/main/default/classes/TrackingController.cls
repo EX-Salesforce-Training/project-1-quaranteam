@@ -9,7 +9,7 @@ public class TrackingController {
     }
     
     public void ConfirmButtonPressed(){
-        mailList = [SELECT Tracking_Number__c FROM Mail__c WHERE id = :trackingID];
+        mailList = [SELECT Tracking_Number__c FROM Mail__c WHERE Tracking_Number__c = :trackingID];
     }
     
 }

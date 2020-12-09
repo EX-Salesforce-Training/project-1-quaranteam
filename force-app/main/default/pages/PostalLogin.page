@@ -8,17 +8,17 @@
 
 <apex:form >
 
-<p><b>QuaranTeamPostal Login</b><br /></p>
+<p><b>QuaranTeam Postal Login</b><br /></p>
 
-<apex:panelGrid columns="2" style="float:left;">
+<apex:panelGrid columns="2" >
 
-<p><b><font color="Black">UserName</font></b><br />
+<div class="body"><center><p><b><font color="Black">UserName</font></b><br />
 
 <apex:inputText required="true" id="username" value="{!username}"/></p>
 
 <p><b><font color="Black">Password</font></b><br />
 
-<apex:inputSecret id="password" value="{!password}"/></p>
+    <apex:inputSecret id="password" value="{!password}"/></p></center></div>
 
 </apex:panelGrid>
 
@@ -47,12 +47,22 @@ float:top;
 }
 
 form{
+        to center -->
+    
+        .Center { 
+            width:200px; 
+            height:200px; 
+            position: fixed; 
+            background-color: blue; 
+            top: 50%; 
+            left: 50%; 
+            margin-top: -100px; 
+            margin-left: -100px; 
+         
+     
 
-float:right;
 
-color:Black;
 
-border:1;
 
 }
 
