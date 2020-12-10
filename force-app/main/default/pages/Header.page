@@ -1,6 +1,7 @@
 <apex:page id="Header" showHeader="false" sidebar="false"  controller="header">
+  <apex:stylesheet value="https://fonts.googleapis.com/css?family=Alef"/>
   <div class="head"><font size="40"><center>QUARANTEAM POSTAL CENTER</center></font></div>
-
+  
 <div align="left" class="icon">
 
 <apex:image value="http://rebc.biz/dist/img/header_banner.jpg" width="3%"
