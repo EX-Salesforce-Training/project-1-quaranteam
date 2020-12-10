@@ -1,12 +1,10 @@
-<apex:page controller="TrackingController" showHeader="false" sidebar="false">
+<apex:page controller="TrackingController" showHeader="false" sidebar="false" >
     
    
     <apex:Pagemessages id="msg"/>
     <apex:include pageName="Header"/>
     <apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
-     	<apex:tab label="Profile" name="name1" id="tabOne">content for tab one</apex:tab>
-        <apex:outputLink value="/apex/MyProfilePage">Profile</apex:outputLink>
-    <apex:outputLink value="/apex/Tracking">Track My Package</apex:outputLink>
+     	
     
        
         

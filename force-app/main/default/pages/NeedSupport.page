@@ -1,16 +1,11 @@
 <apex:page controller="CommunitiesLandingController"  showHeader="false" sidebar="false">
-
+<font>Yeseva One</font>
 	<apex:include pageName="Header"/>
 
 	<apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
     
     	   	
-    
-    	<apex:outputLink value="/apex/MyProfilePage">Profile</apex:outputLink>
-    	<apex:outputLink value="/apex/Tracking">Track My Package</apex:outputLink>
-    	
-
-		<apex:tab label="Welcome" name="NeedSupport" id="NeedSupport">
+    	<apex:tab label="Welcome" name="NeedSupport" id="NeedSupport">
 
 		<div align="center" width="100%">
     	<apex:image id="theImage" value="https://www.usps.com/assets/images/ship/mail-ship/mail-ship-pmi.png" />

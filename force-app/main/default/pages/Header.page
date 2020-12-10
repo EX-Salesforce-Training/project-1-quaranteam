@@ -1,18 +1,19 @@
 <apex:page id="Header" showHeader="false" sidebar="false"  controller="header">
-  <apex:stylesheet value="https://fonts.googleapis.com/css?family=Alef"/>
+  <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&display=swap"/>
+  
   <div class="head"><font size="40"><center>QUARANTEAM POSTAL CENTER</center></font></div>
   
-<div align="left" class="icon">
+
 
 <apex:image value="http://rebc.biz/dist/img/header_banner.jpg" width="3%"
 
 height="3%"/>
 
-</div>
+
 
 <br/>
 
-<div class="name" align="right" bgcolor="#993333"> 
+<div class="name" align="center" bgcolor="#993333"> 
 
 <apex:outputText value="{!$User.FirstName}"/>
 
@@ -42,6 +43,11 @@ height="3%"/>
 <style>
 
 .head{
+  
+  font-family: 'Karla', sans-serif;
+        font-size: 78px;
+    
+  
 
 background-color:#003366;
 
@@ -61,21 +67,10 @@ padding:80px;
 
 }
 
-.icon{
 
-background-color:#003366;
-
-color:white;
-
-float:right;
-
-height:5%;
-
-width:100%;
-
-}
 
 .name{
+  font-family: 'Karla', sans-serif;
 
 background-color:#003366;
 
@@ -84,12 +79,14 @@ color:white;
 }
 
 form{
+  font-family: 'Karla', sans-serif;
 
 float : right;
 
 }
 
 .line{
+  font-family: 'Karla', sans-serif;
 
 background-color:#999966;
 
