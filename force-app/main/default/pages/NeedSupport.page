@@ -1,5 +1,5 @@
 <apex:page controller="CommunitiesLandingController"  showHeader="false" sidebar="false">
-<font>Yeseva One</font>
+
 	<apex:include pageName="Header"/>
 
 	<apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
