@@ -2,17 +2,19 @@
     <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
     <apex:Pagemessages id="msg"/>
     <apex:include pageName="Header"/>
-    <apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
+    
      	
     <apex:form >
-          <apex:pageBlock title="Enter Tracking Number">
-    
+      <br/>
+          <apex:pageBlock title="Enter Tracking Number  i.e.(PO# 00000001)">
+    <br/>
              <apex:pageBlockSection columns="1">
                  <apex:inputText label="TrackingNumber" alt="no" value="{!trackingID}"/>
  
                  <apex:commandButton action="{!ConfirmButtonPressed}" value="Confirm"/>
     
             </apex:pageBlockSection>
+            <br/>
               
               <apex:pageBlock id="display" title="Mail">
                   <apex:pageBlockTable value="{!mailList}" var="mailItem"> 
@@ -26,12 +28,10 @@
               
           </apex:pageBlock>  
         </apex:form>
-        <div align="center" width="100%">
-    	<apex:image id="theImage" value="https://uspstrackingfun.com/wp-content/uploads/2019/08/Track-Package-by-Tracking-Number-1024x582.jpg" />
-		<apex:include pageName="UserStatus"/>
+        
     
-		</div>
     <apex:include pageName="Footer"/>
+    
     <div id="page-container">
         <div id="content-wrap">
           <!-- all other page content -->
@@ -45,9 +45,12 @@
         min-height: 100vh;
       }
       
+      
       #content-wrap {
         padding-bottom: 2.5rem;    /* Footer height */
       }
+      
+        
       
       #footer {
         position: absolute;
@@ -56,6 +59,6 @@
         height: 2.5rem;            /* Footer height */
       }
     </style>
-    </apex:tabPanel>
+    
 
 </apex:page>

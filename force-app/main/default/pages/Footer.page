@@ -1,4 +1,4 @@
-<apex:page showheader="false">
+<apex:page showheader="false" sidebar="false">
     <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
 
 <div class="line" height="20%">&nbsp;</div>

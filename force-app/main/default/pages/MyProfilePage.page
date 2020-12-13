@@ -1,4 +1,4 @@
-<apex:page id="portalUserProfilePage" controller="MyProfilePageController" showHeader="false" title="{!$Label.site.my_profile_page}">
+<apex:page id="portalUserProfilePage" controller="MyProfilePageController" showHeader="false" sidebar="false"title="{!$Label.site.my_profile_page}">
   <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
 <apex:include pageName="Header"/>
     <apex:define name="body">

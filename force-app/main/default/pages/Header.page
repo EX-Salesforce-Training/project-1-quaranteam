@@ -1,4 +1,4 @@
-<apex:page id="Header" showHeader="true" sidebar="false"  controller="header">
+<apex:page id="Header" showHeader="false" sidebar="false"  controller="header">
 <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
   
 <div class="head"><font size="80"><center>Quaranteam Postal Center</center></font></div>
@@ -18,7 +18,7 @@
   <apex:pageBlock >
     <div form="form" font-size="40" border-collapse="separate"> 
       <apex:form >
-        <apex:CommandButton value="Mail History" action="{!ListPackages}" styleClass="buttonStyle" style="padding:4px; size:20px;background:#999966;width:75px;"/>
+        <apex:CommandButton value="Mail History" action="{!ListPackages}" styleClass="buttonStyle" style="padding:4px; size:20px; background:#999966; width:75px;"/>
   
         <apex:commandButton value="Tracking" action="{!Tracking}" styleClass="buttonStyle" style="padding:4px;background:#999966;width:75px;"/>   
  
