@@ -1,0 +1,33 @@
+<apex:page showheader="true" tabstyle="Case">
+    <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
+    <apex:include pageName="Header"/>
+    <p>
+        This page will contain a user's packages
+    </p>
+    <apex:ListViews type="Mail__c" />
+    <div id="page-container">
+        <div id="content-wrap">
+          <!-- all other page content -->
+        </div>
+        <footer id="footer"></footer>
+      </div>
+      <style>
+          font-family: 'Righteous', cursive;
+      #page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+      
+      #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+      }
+      
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;            /* Footer height */
+      }
+    </style>
+    <apex:include pageName="Footer"/>
+</apex:page>
