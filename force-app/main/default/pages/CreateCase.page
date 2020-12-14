@@ -1,7 +1,6 @@
 <apex:page standardController="Case" showHeader="false" sidebar="false">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> </meta> 
 <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
-<apex:stylesheet value="force-app\main\default\staticresources\SiteSamples\SiteStyles.css"/>
     <apex:Pagemessages id="msg"/>
     <apex:include pageName="Header"/>
     
@@ -80,5 +79,7 @@
 
     </apex:form>
     <apex:include pageName="Footer"/>
-
+    <style>
+      font-family: 'Righteous', cursive;
+    </style>
 </apex:page>
