@@ -26,7 +26,7 @@
         
         <apex:commandButton value="Support" action="{!Support}" styleClass="buttonStyle" style="padding:4px;background:#999966;width:75px;"/>
 
-        <apex:commandButton value="Back" action="{!back}" styleClass="buttonStyle" style="padding:4px;background:#999966;width:75px;"/>   
+        <apex:commandButton value="Home" action="{!back}" styleClass="buttonStyle" style="padding:4px;background:#999966;width:75px;"/>   
  
         <apex:CommandButton value="Logout" action="{!Logout}" styleClass="buttonStyle" style="padding:4px;background:#999966;width:75px;"/>
       </apex:form>
@@ -89,8 +89,6 @@ form{
   background-color:#999966;
   width=100%;
   height=10%;
-
-
 }
 
 </style> 
