@@ -24,14 +24,12 @@ In the community a user can view a list of all packages and get information abou
 
 ## Getting Started
    
-git clone 
-(include all environment setup steps)
-
-> Be sure to include BOTH Windows and Unix command  
-> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
-
-- All the `code` required to get started
-- Images of what it should look like
+* git clone https://github.com/EX-Salesforce-Training/project-1-quaranteam.git
+* Get login credentials from either Cedaesha, Dara, or Xia
+* Login to page from this link:
+https://qtcustomers-developer-edition.na139.force.com/PostalVF/login?c=u6tViN3QYtEQb1f6TbBskoVUKWg6249.3hltZndkKeLzKa1YeJNYbTpNH12SrCPJg5tf464mAkN1yAlMtiHXqoCBv3PncvPBydljrNF1gC2eBIEQ4RE9LXkBtjduaYSh.9nZgi6MXOk2Fr1qUoSMfR2yTNNstoBNKrEgU6mYQAhrKi0QQsX3Cy2ZJjckiWycAOILWNL9
+* This is what the page looks like when you log in
+[Imgur](https://i.imgur.com/jfVO6CD.png)
 
 ## Usage
 
