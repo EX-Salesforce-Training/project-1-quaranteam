@@ -1,5 +1,3 @@
-![Revature Logo](./Revature%20Logo.png "Revature Logo")
-
 # Quaranteam - Postal Service Application
 
 ## Project Explanation and Overview
@@ -57,4 +55,4 @@ Cedaesha Booker, Dara Guiney, Xia Josiah-Faeduwor
 
 ## License
 
-This project uses the following license: [<license_name>](<link>).
+Licensed under the [Acceptable Use and External-Facing Services Policy](https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/Agreements/policies/ExternalFacing_Services_Policy.pdf).
