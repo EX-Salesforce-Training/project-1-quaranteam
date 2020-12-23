@@ -40,7 +40,7 @@ https://qtcustomers-developer-edition.na139.force.com/PostalVF/login?c=u6tViN3QY
 ![Imgur](https://i.imgur.com/HpJedjx.png)
 
 * You can see a list of past deliveries if you click the mail history tab:
-![Imgur](https://imgur.com/undefined.png)
+![Imgur](https://imgur.com/6oMLoex.png)
 
 * You can track a package:
 ![Imgur](https://imgur.com/iFNL30i.png)
