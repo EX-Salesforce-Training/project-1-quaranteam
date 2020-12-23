@@ -1,24 +1,50 @@
 ![Revature Logo](./Revature%20Logo.png "Revature Logo")
 
-# P1-Requirments
+# Quaranteam - Postal Service Application
 
-Create a community for use with the postal service
-Use a Visualforce page inside the community
+## Project Explanation and Overview
+Team members Cedaesha, Dara, and Xia created a community for use with a postal service app. We used Visual Force pages inside the community to display the information we wanted to external users. The project was based on an app that we had previously built for tracking mail delivery to contacts and inhabitants. We built our community page off the model that Dara had created. Cedaesha was the Project Lead, and Xia was the Scrum Master. 
 
-## CORE (Required)
-*	Find and edit their account information (15%)
-*	Well-styled (15%)
-*	See a list of packages in shipping. (10%)
-*	See a list of past deliveries (10%)
-*	Allow a user to enter in a tracking code and find specific shipping details. (15%)
-## DATA (Bonus)
-*	Actionable Data Visualization (10%)
-## PROCESS AUTOMATION (Bonus)
-*	Implement Process Automation 
-  *	Workflow Rules (5%)
-  *	Approval Processes (5%)
-  *	Process Builder (2%)
-  *	Flow (5%)
+In the community a user can view a list of all packages and get information about past deliveries and delivery status of a package. They can type in a tracking number and get information about a specific package. They can also create a case if there are any issues with their mail delivery. A user can edit their profile information on the Visual Force page and have their name or address changed in the database. The page uses custom styling to present a welcoming and trusted environment to external users.  
+
+## List of Features Implemented
+
+* App is available for external users through an enabled Community
+* Custom styling for data presentation
+* A user can track a specific package with a tracking number
+* A user can get a list of past deliveries and see the delivery status of their packages
+* A user can locate and edit their account information
+* A user can create a case and have a member of the support team contact them through a chat
+
+## Technologies Used
+
+* Tech 1 - HTML and CSS within a Visual Force Page
+* Tech 2 - Service Cloud
+* Tech 3 - SOQL and Apex
+
+## Getting Started
+   
+git clone 
+(include all environment setup steps)
+
+> Be sure to include BOTH Windows and Unix command  
+> Be sure to mention if the commands only work on a specific platform (eg. AWS, GCP)
+
+- All the `code` required to get started
+- Images of what it should look like
+
+## Usage
+
+> Here, you instruct other people on how to use your project after they’ve installed it. This would also be a good place to include screenshots of your project in action.
+
+## Contributors
+
+> Here list the people who have contributed to this project. (ignore this section, if its a solo project)
+
+## License
+
+This project uses the following license: [<license_name>](<link>).
+
 ## SERVICE CLOUD (Bonus)
 *	Implementation of service cloud. (10%)
   *	Ability to create and submit tickets (10%)
