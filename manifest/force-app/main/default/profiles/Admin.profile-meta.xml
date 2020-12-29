@@ -113,6 +113,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>BatchApex</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ChangePasswordController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -189,6 +193,13 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+<<<<<<< HEAD
+        <apexClass>IntoTheFuture</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
+=======
+>>>>>>> 0b2438539eb0ae9e14b4ae2ace8f0f21eb2adaa2
         <apexClass>LightningForgotPasswordController</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -836,6 +847,10 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>MailingList</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>MyProfilePage</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
@@ -844,6 +859,13 @@
         <enabled>true</enabled>
     </pageAccesses>
     <pageAccesses>
+<<<<<<< HEAD
+        <apexPage>NeedSupportController</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+    <pageAccesses>
+=======
+>>>>>>> 0b2438539eb0ae9e14b4ae2ace8f0f21eb2adaa2
         <apexPage>NewCaseList</apexPage>
         <enabled>true</enabled>
     </pageAccesses>

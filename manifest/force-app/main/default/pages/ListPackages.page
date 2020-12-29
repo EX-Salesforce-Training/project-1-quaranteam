@@ -1,34 +1,35 @@
-<apex:page controller="CommunitiesLandingController"  showHeader="false" sidebar="false">
-	<apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
-	<apex:include pageName="Header"/>
-
-	<apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
+<apex:page showheader="false" sidebar="false">
+    <apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
+    <apex:include pageName="Header"/>
+    <apex:ListViews type="Mail__c" />
+    <div id="page-container">
+        <div id="content-wrap">
+          <!-- all other page content -->
+        </div>
+        <footer id="footer"></footer>
+      </div>
+      <style>
+          font-family: 'Righteous', cursive;
+      #page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+      
+      #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+      }
+      
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;            /* Footer height */
+      }
+    </style>
+     
     
-    	   	
-    	<apex:tab label="Welcome" name="NeedSupport" id="NeedSupport">
-
-		<div align="center" width="100%">
-    	<apex:image id="theImage" value="https://www.usps.com/assets/images/ship/mail-ship/mail-ship-pmi.png" />
-
-
-
-	
-    
-    	<apex:include pageName="UserStatus"/>
-    
-		</div>
- 
-
-		</apex:tab>
-   		
-    	</apex:tabPanel>
-    
- 		<apex:include pageName="Footer"/>
-
-		 <style>
-			font-family: 'Righteous', cursive;
-		  </style>
-		  <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <apex:include pageName="Footer"/>
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
     <script type='text/javascript'>
         var initESW = function(gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //Or false

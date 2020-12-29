@@ -1,24 +1,24 @@
-<apex:page showHeader="false" sidebar="false" controller="CommunitiesLoginController" standardStylesheets="true">
-
+<apex:page showHeader="false" sidebar="false" controller="CommunitiesLoginController" standardStylesheets="false">
+<apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
 <apex:Pagemessages id="msg"/>
 
 <!-- To allow Salesforce to display error messages -->
 
-<div class="head"><font size="40"><center>QUARANTEAM POSTAL</center></font></div>
+<div class="head"><font size="80"><center>QUARANTEAM POSTAL</center></font></div>
 
 <apex:form >
 
-<p><b>QuaranTeam Postal Login</b><br /></p>
+<p>QuaranTeam Postal Login<br /></p>
 
 <apex:panelGrid columns="2" >
 
-<div class="body"><center><p><b><font color="Black">UserName</font></b><br />
+<div class="form"><center><p><b><font align="center" color="White">UserName</font></b><br />
 
 <apex:inputText required="true" id="username" value="{!username}"/></p>
 
-<p><b><font color="Black">Password</font></b><br />
+<p><b><font color="White">Password</font></b><br />
 
-    <apex:inputSecret id="password" value="{!password}"/></p></center></div>
+<apex:inputSecret id="password" value="{!password}"/></p></center></div>
 
 </apex:panelGrid>
 
@@ -31,8 +31,10 @@
 <style>
 
 html,body{
+    font-family: 'Righteous', cursive;
+    
 
-background-image:url(http://rebc.biz/dist/img/header_banner.jpg);
+background-image:url(https://i.imgur.com/HfP4xaJ.png);
 
 background-repeat: no-repeat;
 
@@ -40,31 +42,33 @@ background-size: 100% 100% ;
 
 height:100%;
 
-color:Black;
+color:white;
 
 float:top;
 
 }
+.head {
+    -webkit-text-stroke: 1px black;
+}
 
 form{
-        to center -->
+    font-family: 'Righteous', cursive;
     
-        .Center { 
-            width:200px; 
-            height:200px; 
+            width:100px; 
+            height:100px; 
             position: fixed; 
-            background-color: blue; 
-            top: 50%; 
+            top: 25%; 
             left: 50%; 
             margin-top: -100px; 
             margin-left: -100px; 
+        }
          
      
 
 
 
 
-}
+
 
 </style>
 

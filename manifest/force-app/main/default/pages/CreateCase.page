@@ -1,34 +1,11 @@
-<apex:page controller="CommunitiesLandingController"  showHeader="false" sidebar="false">
-	<apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
-	<apex:include pageName="Header"/>
-
-	<apex:tabPanel switchType="Client" selectedTab="NeedSupport" id="TabPanel1">
+<apex:page standardController="Case" showHeader="false" sidebar="false">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> </meta> 
+<apex:stylesheet value="https://fonts.googleapis.com/css2?family=Righteous&display=swap"/>
+    <apex:Pagemessages id="msg"/>
+    <apex:include pageName="Header"/>
     
-    	   	
-    	<apex:tab label="Welcome" name="NeedSupport" id="NeedSupport">
-
-		<div align="center" width="100%">
-    	<apex:image id="theImage" value="https://www.usps.com/assets/images/ship/mail-ship/mail-ship-pmi.png" />
-
-
-
-	
     
-    	<apex:include pageName="UserStatus"/>
-    
-		</div>
- 
-
-		</apex:tab>
-   		
-    	</apex:tabPanel>
-    
- 		<apex:include pageName="Footer"/>
-
-		 <style>
-			font-family: 'Righteous', cursive;
-		  </style>
-		  <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
+    <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
     <script type='text/javascript'>
         var initESW = function(gslbBaseURL) {
             embedded_svc.settings.displayHelpButton = true; //Or false
@@ -80,4 +57,29 @@
             initESW('https://service.force.com');
         }
     </script>  
+    
+    <apex:form >
+    <apex:pageBlock title="Create Case">
+        <apex:pageMessages />
+        
+        <apex:pageBlockSection columns="1">
+    <apex:inputField value="{! Case.subject }"/>
+    <apex:inputField value="{! Case.Description }"/>
+    <apex:inputField value="{! Case.SuppliedName }"/>
+    <apex:inputField value="{! Case.SuppliedEmail }"/>
+    <apex:inputField value="{! Case.SuppliedPhone }"/>
+    <apex:inputField value="{! Case.SuppliedCompany }"/>
+    
+</apex:pageBlockSection>
+        <apex:pageBlockButtons >
+     <apex:commandButton action="{!save}" value="Save"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+        
+
+    </apex:form>
+    <apex:include pageName="Footer"/>
+    <style>
+      font-family: 'Righteous', cursive;
+    </style>
 </apex:page>
